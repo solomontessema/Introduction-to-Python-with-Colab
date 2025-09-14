@@ -1,0 +1,228 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/solomontessema/Introduction-to-Python-with-Colab/blob/master/notebooks/Day_03_Data_Structures\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "<table>\n",
+        "  <tr>\n",
+        "    <td><img src=\"https://ionnova.com/img/ionnova_logo_name_2.png\" width=\"120px\"></td>\n",
+        "    <td><h1>Day 3: Data Structures</h1></td>\n",
+        "  </tr>\n",
+        "</table>"
+      ],
+      "metadata": {
+        "id": "oP0UnaiSEPzr"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Lists**\n",
+        "A List is an ordered, changeable collection.\n",
+        "Can store duplicates.\n",
+        "Best when you need a sequence of items."
+      ],
+      "metadata": {
+        "id": "Lc28ZmMJGg8l"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruits = [\"apple\", \"banana\", \"cherry\"]\n",
+        "print(fruits)"
+      ],
+      "metadata": {
+        "id": "QnNdgTVfGfyL"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(fruits[0])"
+      ],
+      "metadata": {
+        "id": "-x7K2kIVG7U8"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **Modifying Lists**\n",
+        "* append() → add one item at the end\n",
+        "* insert() → add at a specific index\n",
+        "* extend() → add multiple items\n",
+        "* \"+\" → join two lists"
+      ],
+      "metadata": {
+        "id": "vmOinw6quh2I"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruits.append(\"peach\")\n",
+        "print(fruits)"
+      ],
+      "metadata": {
+        "id": "wepK0sRhudu8"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruits.insert(2, \"orange\")   # add at index 2 (note that the list index begins with 0)\n",
+        "print(fruits)"
+      ],
+      "metadata": {
+        "id": "oMwnI2vwuulQ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruits.extend([\"watermelon\", \"mango\"])\n",
+        "print(fruits)"
+      ],
+      "metadata": {
+        "id": "qCOwE0-FvMOR"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "more_fruits = [\"pineapple\", \"grape\", \"strawberry\"]\n",
+        "fruits = fruits + more_fruits\n",
+        "print(fruits)"
+      ],
+      "metadata": {
+        "id": "qs8yZidZvX0K"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruits.remove(\"banana\")   # removes the first \"banana in the list.\"\n",
+        "print(fruits)"
+      ],
+      "metadata": {
+        "id": "xCCgvWOQuFGn"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "hlFJAQ20tLTf"
+      },
+      "outputs": [],
+      "source": [
+        "removed_item = fruits.pop(2)   # removes index 2 → \"cherry\"\n",
+        "print(\"Updated list:\", fruits)\n",
+        "print(\"Removed item:\", removed_item)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "del fruits[0]\n",
+        "print(fruits)"
+      ],
+      "metadata": {
+        "id": "K9sTj_vSty27"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruits.clear()\n",
+        "print(fruits)"
+      ],
+      "metadata": {
+        "id": "Xka2XP4Wtjky"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruits_to_remove = {\"apple\", \"banana\"}\n",
+        "fruits = [fruit for fruit in fruits if fruit not in fruits_to_remove]\n",
+        "print(fruits)"
+      ],
+      "metadata": {
+        "id": "5Q4VsOXVkkZd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for fruit in fruits:\n",
+        "    print(fruit)"
+      ],
+      "metadata": {
+        "id": "YUQ9i8FVI7Z2"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# inserting user input into the fruits list\n",
+        "for i in range(1,5):\n",
+        "  newFruit = input()\n",
+        "  fruits.append(newFruit)"
+      ],
+      "metadata": {
+        "id": "u5yutsHeSAgq"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
