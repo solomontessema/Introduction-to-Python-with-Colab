@@ -13,7 +13,7 @@ This course covers essential Python topics including:
 - Object-oriented programming with classes and objects
 - Web requests and APIs using `requests`
 
-View the full syllabus on [Google Docs](https://docs.google.com/document/d/1k6EBa5O4dpgPFbh0bEWTGRcXvFBHITSiWIXBgQhEeDQ/edit?tab=t.0)
+View the full syllabus on [Content](https://docs.google.com/document/d/1_655OzmZD9BonvZKXhJ9pKPuJmqRKI2Qk9AYws2tSOE/edit?usp=sharing)
 
 
 
