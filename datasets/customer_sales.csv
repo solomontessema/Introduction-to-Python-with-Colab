@@ -1,0 +1,6 @@
+CustomerID,Name,Email,Product,Quantity,UnitPrice,Total,Date
+C001,Alice Johnson,alice.j@example.com,Laptop,1,1200.00,1200.00,2025-08-01
+C002,Bob Smith,bob.smith@example.com,Mouse,2,25.00,50.00,2025-08-02
+C003,Carol Lee,carol.lee@example.com,Keyboard,1,45.00,45.00,2025-08-03
+C004,David Kim,david.k@example.com,Monitor,2,200.00,400.00,2025-08-04
+C005,Eva Brown,eva.b@example.com,Headphones,1,80.00,80.00,2025-08-05
