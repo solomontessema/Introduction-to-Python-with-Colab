@@ -1,17 +1,37 @@
 questions = [
     {
-        "question": "What is GitHub Copilot primarily used for?",
-        "options": ["Generating code suggestions using AI", "Designing user interfaces", "Running automated tests", "Managing cloud infrastructure"],
+        "question": "What does the following code output? print(\"Hello!\")",
+        "options": ["Hello!", "hello", "SyntaxError", "None"],
         "answer": 0
     },
     {
-        "question": "Which company collaborated with GitHub to develop Copilot?",
-        "options": ["Microsoft", "Amazon", "Google", "OpenAI"],
-        "answer": 3
+        "question": "Which of the following is a valid way to assign a string to a variable in Python?",
+        "options": ["name = Solomon", "name = 'Solomon'", "name := 'Solomon'", "string name = 'Solomon'"],
+        "answer": 1
     },
     {
-        "question": "Which company collaborated with GitHub to develop Copilot?",
-        "options": ["Microsoft", "Amazon", "Google", "OpenAI"],
-        "answer": 3
+        "question": "What will this code print? price = 12 + 34; print(\"Price:\", price)",
+        "options": ["Price: 1234", "Price: 46", "Price: 12 + 34", "Price: 12"],
+        "answer": 1
+    },
+    {
+        "question": "Which statement correctly uses an if-else block?",
+        "options": [
+            "if price > 15 print(\"Big Number\") else print(\"Small Number\")",
+            "if price > 15: print(\"Big Number\") else: print(\"Small Number\")",
+            "if price > 15 then print(\"Big Number\") else print(\"Small Number\")",
+            "if price > 15: print(\"Big Number\") elif print(\"Small Number\")"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "What is the purpose of Google Colab in this lesson?",
+        "options": [
+            "To compile C++ code",
+            "To run Python code in a cloud-based notebook",
+            "To edit HTML files",
+            "To manage Git repositories"
+        ],
+        "answer": 1
     }
 ]
