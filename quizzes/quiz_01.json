@@ -23,15 +23,5 @@
       "To manage Git repositories"
     ],
     "answer": 1
-  },
-  {
-    "question": "Which statement correctly uses an if-else block in Python?",
-    "options": [
-      "if price > 15 print(\"Big Number\") else print(\"Small Number\")",
-      "if price > 15:\n    print(\"Big Number\")\nelse:\n    print(\"Small Number\")",
-      "if price > 15 then print(\"Big Number\") else print(\"Small Number\")",
-      "if price > 15:\n    print(\"Big Number\")\nelif print(\"Small Number\")"
-    ],
-    "answer": 1
   }
 ]
