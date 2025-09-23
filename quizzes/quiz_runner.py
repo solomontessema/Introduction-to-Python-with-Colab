@@ -2,44 +2,46 @@ import ipywidgets as widgets
 from IPython.display import display, clear_output
 
 def run_quiz(questions):
-    score = 0
-    index = 0
+    radios = []
+    output = widgets.Output()
+    submit_button = widgets.Button(description="Submit Quiz", button_style="success")
 
-    question_output = widgets.Output()
-    feedback_output = widgets.Output()
-    button = widgets.Button(description="Submit")
+    # Display all questions with radio buttons
+    for q in questions:
+        print(q["question"])
+        radio = widgets.RadioButtons(options=q["options"], value=None)
+        radios.append((q, radio))
+        display(radio)
 
-    def show_question(i):
-        question_output.clear_output()
-        feedback_output.clear_output()
-        with question_output:
-            print(questions[i]["question"])
-            radio.options = questions[i]["options"]
-            radio.value = None
-            display(radio)
-
-    radio = widgets.RadioButtons(options=[], value=None)
-    display(question_output, button, feedback_output)
+    display(submit_button, output)
 
     def on_submit(b):
-        nonlocal score, index
-        feedback_output.clear_output()
-        with feedback_output:
-            if radio.value is None:
-                print("⚠️ Please select an option before submitting.")
-                return
-            correct = questions[index]["options"][questions[index]["answer"]]
-            if radio.value == correct:
-                print("✅ Correct!")
-                score += 1
-            else:
-                print(f"❌ Incorrect. Correct answer: {correct}")
-        index += 1
-        if index < len(questions):
-            show_question(index)
-        else:
-            question_output.clear_output()
-            print(f"\n🎉 Quiz complete! Your score: {score} out of {len(questions)}")
+        with output:
+            clear_output()
+            incorrect = []
+            score = 0
 
-    button.on_click(on_submit)
-    show_question(index)
+            for q, radio in radios:
+                selected = radio.value
+                correct = q["options"][q["answer"]]
+                if selected == correct:
+                    score += 1
+                else:
+                    incorrect.append({
+                        "question": q["question"],
+                        "selected": selected,
+                        "correct": correct
+                    })
+
+            print(f"✅ Your score: {score} out of {len(questions)}\n")
+
+            if incorrect:
+                print("❌ Review the incorrect answers:\n")
+                for item in incorrect:
+                    print(f"Question: {item['question']}")
+                    print(f"Your answer: {item['selected']}")
+                    print(f"Correct answer: {item['correct']}\n")
+            else:
+                print("🎉 Perfect score! Well done.")
+
+    submit_button.on_click(on_submit)
