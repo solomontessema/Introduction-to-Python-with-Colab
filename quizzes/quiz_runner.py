@@ -1,7 +1,7 @@
 import ipywidgets as widgets
 from IPython.display import display, clear_output
 
-def run_quiz():
+def run_quiz(questions):
     score = 0
     for q in questions:
         print(q["question"])
