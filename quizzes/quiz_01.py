@@ -14,16 +14,17 @@ questions = [
         "options": ["Price: 1234", "Price: 46", "Price: 12 + 34", "Price: 12"],
         "answer": 1
     },
-    {
-        "question": "Which statement correctly uses an if-else block?",
-        "options": [
-            "if price > 15 print(\"Big Number\") else print(\"Small Number\")",
-            "if price > 15: print(\"Big Number\") else: print(\"Small Number\")",
-            "if price > 15 then print(\"Big Number\") else print(\"Small Number\")",
-            "if price > 15: print(\"Big Number\") elif print(\"Small Number\")"
-        ],
-        "answer": 1
-    },
+{
+    "question": "Which statement correctly uses an if-else block in Python?",
+    "options": [
+        'if price > 15 print("Big Number") else print("Small Number")',
+        'if price > 15:\n    print("Big Number")\nelse:\n    print("Small Number")',
+        'if price > 15 then print("Big Number") else print("Small Number")',
+        'if price > 15:\n    print("Big Number")\nelif print("Small Number")'
+    ],
+    "answer": 1
+}
+,
     {
         "question": "What is the purpose of Google Colab in this lesson?",
         "options": [
