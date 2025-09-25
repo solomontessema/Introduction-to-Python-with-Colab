@@ -9,7 +9,7 @@ def run_quiz(questions):
     # Display each question with Markdown and separate radio buttons
     for idx, q in enumerate(questions):
         # Render question with Markdown (supports code blocks and newlines)
-        display(Markdown(f"### ❓ Question {idx + 1}\n\n{q['question'].strip()}"))
+        display(Markdown(f"### Question {idx + 1}\n\n{q['question'].strip()}"))
         
         # Display radio buttons separately
         radio = widgets.RadioButtons(options=q["options"], value=None)
