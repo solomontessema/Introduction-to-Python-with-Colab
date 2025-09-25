@@ -1,28 +1,21 @@
 [
   {
-
-    "question": "\nWhat does the following code output?\nfor i in range(3): print(i)",
+    "question": "What does the following code output?\n\n```python\nfor i in range(3):\n    print(i)\n```",
     "options": ["0 1 2", "1 2 3", "0 1 2 3", "Error"],
     "answer": 0
   },
-
   {
-
-    "question": "\nWhich keyword is used to define a function in Python?",
+    "question": "Which keyword is used to define a function in Python?",
     "options": ["func", "define", "def", "function"],
     "answer": 2
   },
-
   {
-
-    "question": "\nWhat will this code print?\ndef greet(name): \n\tprint(\"Hello,\", name)\n\tgreet(\"Solomon\")",
+    "question": "What will this code print?\n\n```python\ndef greet(name):\n    print(\"Hello,\", name)\n\ngreet(\"Solomon\")\n```",
     "options": ["Hello, Solomon", "Solomon Hello", "Hello name", "Error"],
     "answer": 0
   },
-
   {
-
-    "question": "\nWhat does the following code do?\ncount = 5\nwhile count > 0:\n    print(count)\n    count -= 1",
+    "question": "What does the following code do?\n\n```python\ncount = 5\nwhile count > 0:\n    print(count)\n    count -= 1\n```",
     "options": [
       "Prints 5 once",
       "Prints numbers 5 to 1",
@@ -31,10 +24,8 @@
     ],
     "answer": 1
   },
-
   {
-
-    "question": "\nWhy do we use functions in Python?",
+    "question": "Why do we use functions in Python?",
     "options": [
       "To repeat code without loops",
       "To store data permanently",
