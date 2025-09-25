@@ -15,7 +15,7 @@
 
   {
 
-    "question": "\nWhat will this code print?\ndef greet(name): print(\"Hello,\", name)\ngreet(\"Solomon\")",
+    "question": "\nWhat will this code print?\ndef greet(name): \n\tprint(\"Hello,\", name)\n\tgreet(\"Solomon\")",
     "options": ["Hello, Solomon", "Solomon Hello", "Hello name", "Error"],
     "answer": 0
   },
