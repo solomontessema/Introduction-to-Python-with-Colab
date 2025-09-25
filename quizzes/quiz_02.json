@@ -1,0 +1,37 @@
+[
+  {
+    "question": "What does the following code output?\nfor i in range(3): print(i)",
+    "options": ["0 1 2", "1 2 3", "0 1 2 3", "Error"],
+    "answer": 0
+  },
+  {
+    "question": "Which keyword is used to define a function in Python?",
+    "options": ["func", "define", "def", "function"],
+    "answer": 2
+  },
+  {
+    "question": "What will this code print?\ndef greet(name): print(\"Hello,\", name)\ngreet(\"Solomon\")",
+    "options": ["Hello, Solomon", "Solomon Hello", "Hello name", "Error"],
+    "answer": 0
+  },
+  {
+    "question": "What does the following code do?\ncount = 5\nwhile count > 0:\n    print(count)\n    count -= 1",
+    "options": [
+      "Prints 5 once",
+      "Prints numbers 5 to 1",
+      "Prints numbers 1 to 5",
+      "Throws an error"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Why do we use functions in Python?",
+    "options": [
+      "To repeat code without loops",
+      "To store data permanently",
+      "To organize and reuse code",
+      "To speed up the computer"
+    ],
+    "answer": 2
+  }
+]
