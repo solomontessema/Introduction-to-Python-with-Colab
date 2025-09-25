@@ -6,10 +6,12 @@ def run_quiz(questions):
     output = widgets.Output()
     submit_button = widgets.Button(description="Submit Quiz", button_style="success")
 
-    # Display all questions with Markdown and radio buttons
+    # Display each question with Markdown and separate radio buttons
     for idx, q in enumerate(questions):
-        question_md = f"\n\n### Question {idx + 1}\n**{q['question'].strip()}**"
-        display(Markdown(question_md))
+        # Render question with Markdown (supports code blocks and newlines)
+        display(Markdown(f"### ❓ Question {idx + 1}\n\n{q['question'].strip()}"))
+        
+        # Display radio buttons separately
         radio = widgets.RadioButtons(options=q["options"], value=None)
         radios.append((q, radio))
         display(radio)
@@ -40,7 +42,7 @@ def run_quiz(questions):
                 display(Markdown("### ❌ Review the incorrect answers:\n"))
                 for item in incorrect:
                     display(Markdown(
-                        f"**Question:** {item['question'].strip()}\n\n"
+                        f"**Question:**\n\n{item['question'].strip()}\n\n"
                         f"- Your answer: `{item['selected']}`\n"
                         f"- Correct answer: `{item['correct']}`\n"
                     ))
