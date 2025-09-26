@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Which data structure allows duplicate items and preserves order?",
+    "options": ["Set", "Tuple", "List", "Dictionary"],
+    "answer": 2
+  },
+  {
+    "question": "What is the output of this code?\n\n```python\nfruits = {\"apple\", \"banana\", \"apple\"}\nprint(fruits)\n```",
+    "options": ["{'apple', 'banana'}", "['apple', 'banana']", "('apple', 'banana')", "Error"],
+    "answer": 0
+  },
+  {
+    "question": "Which data structure is immutable?",
+    "options": ["List", "Set", "Tuple", "Dictionary"],
+    "answer": 2
+  },
+  {
+    "question": "How do you access the value associated with a key in a dictionary?",
+    "options": ["dict.key", "dict[key]", "dict->key", "dict.getkey"],
+    "answer": 1
+  },
+  {
+    "question": "What does this code print?\n\n```python\ncolors = {\"red\", \"green\", \"blue\"}\ncolors.add(\"yellow\")\nprint(colors)\n```",
+    "options": [
+      "['red', 'green', 'blue', 'yellow']",
+      "{'red', 'green', 'blue', 'yellow'}",
+      "('red', 'green', 'blue', 'yellow')",
+      "Error"
+    ],
+    "answer": 1
+  }
+]
