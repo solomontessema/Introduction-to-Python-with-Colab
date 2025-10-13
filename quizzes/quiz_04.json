@@ -1,1 +1,43 @@
+[
+  {
+    "question": "Which file mode allows both reading and writing without truncating the file?",
+    "options": ["r", "w", "r+", "w+"],
+    "answer": 2
+  },
+  {
+    "question": "What does `json.load(file)` do?",
+    "options": [
+      "Writes JSON data to a file",
+      "Reads and parses JSON data from a file",
+      "Appends data to a JSON file",
+      "Creates a new JSON file"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which mode should you use to append data to an existing file?",
+    "options": ["r", "w", "a", "r+"],
+    "answer": 2
+  },
+  {
+    "question": "What is the correct way to write a list of dictionaries to a JSON file?",
+    "options": [
+      "json.write(data, file)",
+      "file.write(json.dumps(data))",
+      "json.dump(data, file)",
+      "json.append(data, file)"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What does this code do?\n\n```python\nwith open(\"students.json\", \"w\") as f:\n    json.dump([], f)\n```",
+    "options": [
+      "Reads student data from a file",
+      "Initializes the file with an empty dictionary",
+      "Appends a student record to the file",
+      "Creates or overwrites the file with an empty list"
+    ],
+    "answer": 3
+  }
+]
 
