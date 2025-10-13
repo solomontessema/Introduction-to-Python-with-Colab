@@ -18,7 +18,6 @@
     "question": "Which mode should you use to append data to an existing file?",
     "options": ["r", "w", "a", "r+"],
     "answer": 2
-  },
-
+  }
 ]
 
